@@ -1,0 +1,34 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dynamic Chat UI</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="chat-app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h3>Chats</h3>
+    <div id="chatList"></div>
+  </aside>
+
+  <!-- Main Chat -->
+  <main class="chat-main">
+    <header id="chatHeader">Select a chat</header>
+
+    <section id="messages" class="messages"></section>
+
+    <footer class="chat-input">
+      <input id="messageInput" placeholder="Type message..." />
+      <button onclick="sendMessage()">Send</button>
+    </footer>
+  </main>
+</div>
+
+<script src="config/env.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>
